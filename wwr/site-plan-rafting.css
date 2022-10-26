@@ -81,13 +81,13 @@ p {
   height: 3em;
 }
 .primary {
-  background-color: var(--primary-color);
+  background-color: rgb(50, 180, 180);
 }
 .secondary {
-  background-color: var(--secondary-color);
+  background-color: white;
 }
 .accent1 {
-  background-color: var(--accent1-color);
+  background-color: #f0ac19;
 }
 .accent2{
   background-color: var(--accent2-color);
@@ -97,7 +97,8 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 nav {
-  background-color: var(--nav-background-color);
+  background-color: rgb(50, 180, 180);
+  color: white;
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
@@ -105,15 +106,17 @@ nav {
 nav  {
   list-style-type: none;
   display: flex;
+  color: white;
 }
 nav a {
   padding:1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
+  color:
 }
 nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+  color: white;;
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
@@ -161,4 +164,7 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+.td{
+    color:white;
 }
