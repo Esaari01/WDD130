@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
 #content{
     max-width: 1600px;
    margin: 0 auto;
@@ -29,6 +31,7 @@ main section{
 
 body{
     background-color: #fcfbfb;
+    font-family: Rock Salt, Rockwell, sans-serif;
 }
 
 header{
@@ -48,10 +51,11 @@ nav a:hover {
 }
 
 .join{
-    background-color: rgba(40, 173, 173, 0.7);
-    color: white;
+    background-color: rgba(50, 180, 180, .7);
+    color: black;
     text-decoration: none;
     font-weight: bold;
+    
     
 }
 
