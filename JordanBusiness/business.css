@@ -166,39 +166,171 @@ footer a{
     text-decoration: none;
 }
 @media screen and (max-width: 900px){
-    #hero, .home-grid{
-        display: block;
-        height: auto;
+    #content{
+        max-width: 1600px;
+       margin: 0 auto;
+       text-align: center;
+       background-image: url("photos/bannerpic.jpg");
     }
-    nav, footer{
-        flex-direction: column;
+    #logo_link{
+        padding-top: 5px;
+        grid-column: 4/7;
     }
     nav a{
-        display: block;
-        padding: 15px;
+        text-align: center;
+        color:black;
+        text-decoration: none;
+        padding: 50px 35px 0 35px;
     }
-    #hero{
-        margin-top: 0;
+    hero-img{
+        width: 100%;
+        position: absolute;
     }
-    #hero-msg{
-        margin-top: 0;
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
     }
-    hero-msg h4{
-        display: none;
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 50px repeat(3, 200px);
     }
-    .home-title{
-        font-size: 25px;
-        color:#f0ac19;
+    .gallery1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 90%;
+        height: 100%;
     }
-    #background{
-        display: none;
+    .gallery2{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 90%;
+        height: 100%;
+        margin-top: 10px;
+    }
+    .exterior2{
+        grid-column: 2/3;
+        grid-row: 2/4;
+        width: 90%;
+        height: 100%;
+        margin: 160px 0 0 50px;
+    }
+    .gallery3{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 90%;
+        height: 100%;
+    }
+    .gallery4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 100%;
+        height: 100%;
+    }
+    .street-sign{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        opacity: .6;
+        width: 90%;
+        height: 100%;
+    }
+    .image-paragraph{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 20px 10px 20px 10px;
+    }
+    .interior1{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .interior2{
+        grid-column: 3/4;
+        grid-row:4/5;
+    }
+    .gallery h2{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
     }
     .msg{
-        width: 80%;
-        display: block;
-        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
-    footer{
-        margin-top: 25px;
+    .gallery-paragraph1{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin: 10px 10px 10px 10px;
+        border: solid;
+        border-color: black;
+        border-radius: 20px;
+        font-size: large;
+        font-weight: bold;
+        padding: 20px;
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color:#ccc;
+        margin-top: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #footer a:hover{
+        background-color: #E7C24F;
+        color: white;
+    }
+    body{
+        background-color: #abbad1;
+    }
+    .paragraph h2{
+        display: grid;
+        grid-template-columns: 2fr;
+        padding-top: 20px;
+    }
+    .book{
+        background-color: #ccc;
+        font-size: 18px;
+        padding: 10px 20px;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+    }
+    nav a{
+        text-align: center;
+        color:black;
+        text-decoration: none;
+        padding: 0 35px 0 35px;
+        background-color: #abbad1;
+    }
+    nav a:hover{
+        background-color: #E7C24F;
+        color: white;
+        padding: 0 35px 0 35px;
+    }
+    footer .social img{
+        padding-top: 15px;
+    }
+    .intro{
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+    }
+    #hero-msg h4{
+        color: white;
+        font-weight: bold;
+    }
+    #hero-msg .home-title{
+        color: white;
+        font-weight: bold;
+    }
+    footer a{
+        color: black;
+        text-decoration: none;
     }
 }
