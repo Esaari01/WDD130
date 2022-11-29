@@ -167,6 +167,12 @@ footer .social img{
 .rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
 }
+#about-footer{
+    margin:0;
+}
+.about-card{
+    margin: 150px 0;
+}
 .card-img{
     border: 10px solid #f0ac19;
     width: 100%;
@@ -216,9 +222,23 @@ nav{
     grid-column: 8/10;
     grid-row: 2/3;
 }
+.about-card{
+    grid-column: 7/10;
+    grid-row: 2/3;
+}
 #background{
     grid-column: 1/11;
     grid-row: 4/9;
+}
+#about-header{
+    grid-column: 1/8;
+    margin-top: 50px;
+}
+#about-paragraph1{
+    grid-column: 1/6;
+    grid-row: 2/3;
+    background-color: rgba(40, 173, 173, 0.7);
+    margin: 150px 0 20px 20px;
 }
 @media screen and (max-width: 900px){
     #hero, .home-grid{
@@ -245,7 +265,7 @@ nav{
         font-size: 25px;
         color:#f0ac19;
     }
-    .rivers-card, .camping-card, .rapids-card{
+    .rivers-card, .camping-card, .rapids-card, .about-card{
         margin: 50px auto;
         width: 60%;
     }
