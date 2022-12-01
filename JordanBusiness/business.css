@@ -21,6 +21,9 @@ hero-img{
     width: 100%;
     position: absolute;
 }
+.calendly{
+    color: black;
+}
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
