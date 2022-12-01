@@ -240,6 +240,17 @@ nav{
     background-color: rgba(40, 173, 173, 0.7);
     margin: 150px 0 20px 20px;
 }
+#feedback{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;  
+}
+.moveDown {
+    margin-top: 3em;
+}
 @media screen and (max-width: 900px){
     #hero, .home-grid{
         display: block;
