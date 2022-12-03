@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+  </head>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #CCC;
+      padding: 10px;
+    }
+
+    form > div {
+      display: flex;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+
+  </style>
+
+  <body>
+    <div id="feedback"></div>
+    <form>
+      <div>
+        <label for="user_name">Name:</label>
+        <input type="text" name="user_name" id="user_name">
+      </div>
+
+      <button>Send your message</button>
+    </form>
+
+    <script>
+      const feedbackElement = document.getElementById('feedback')
+      const formElement = document.forms[0]
+      formElement.addEventListener('submit', e => {
+        e.preventDefault()
+        feedbackElement.innerHTML = `Hello ${formElement.user_name.value}! Thank you for your message. We will get back with you as soon as possible!`
+      })
+      feedbackElement.style.display = 'block';
+      document.body.classList.add('moveDown')
+    </script>
+  </body>
+
+</html>
